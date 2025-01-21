@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Mod Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu" class="menu-container">
+    <div class="logo">M</div>
+    <div class="marquee">
+      <p>Hà Văn Huấn VN | Mod Config Ios Phone Game Free Fire 🔫</p>
+    </div>
+    <div class="switches">
+      <div class="switch">
+        <span>Helock Snipe</span>
+        <input type="checkbox" id="switch1">
+        <label for="switch1"></label>
+      </div>
+      <div class="switch">
+        <span>Aimlock Option</span>
+        <input type="checkbox" id="switch2">
+        <label for="switch2"></label>
+      </div>
+      <div class="switch">
+        <span>Settings Game </span>
+        <input type="checkbox" id="switch3">
+        <label for="switch3"></label>
+      </div>
+      <div class="switch">
+        <span>Head AimCsot</span>
+        <input type="checkbox" id="switch4">
+        <label for="switch4"></label>
+      </div>
+      <div class="switch">
+        <span>Delay Screen</span>
+        <input type="checkbox" id="switch5">
+        <label for="switch5"></label>
+      </div>
+      <div class="switch">
+        <span>Aim 45%</span>
+        <input type="checkbox" id="switch6">
+        <label for="switch6"></label>
+      </div>
+      <div class="switch">
+        <span>FinxShow Head</span>
+        <input type="checkbox" id="switch7">
+        <label for="switch7"></label>
+      </div>
+    </div>
+    <div class="customize">
+      <label for="colorPicker">Color Function:</label>
+      <input type="color" id="colorPicker">
+    </div>
+  </div>
+  <div id="loading-spinner" class="spinner hidden">
+    <div class="spinner-circle"></div>
+    <p>Đang xử lý...</p>
+  </div>
+  <audio id="clickSound" src="click.mp3"></audio>
+  <canvas id="particles"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
