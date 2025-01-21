@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       
+           
+  <!-- Menu Checkbox -->
+  <div class="menu menu-checkbox">
+     <div class="text-container">
+    <p class="animated-text">SETTINGS PHONE DATA</p>
+  </div>
+            
+  <label>
+      <input type="checkbox" onchange="handleCheckbox(this)">
+      <span class="checkbox-label">Head installation</span>
+    </label>
+    <label>
+      <input type="checkbox" onchange="handleCheckbox(this)">
+      <span class="checkbox-label">Install Trunk</span>
+    </label>
+    <label>
+      <input type="checkbox" onchange="handleCheckbox(this)">
+      <span class="checkbox-label">machine optimization</span>
+    </label>
+    <label>
+      <input type="checkbox" onchange="handleCheckbox(this)">
+      <span class="checkbox-label">Find elasticity</span>
+    </label>
+    <label>
+      <input type="checkbox" onchange="handleCheckbox(this)">
+      <span class="checkbox-label">sensitive</span>
+    </label>
+  </div>
+
+  <!-- Menu Switch -->
+  <div class="menu menu-switch">
+    <div class="text-container">
+    <p class="animated-text">APLY SETTINGS HSCK</p>
+  </div>
+    <label class="switch">
+      <input type="checkbox" onchange="handleSwitch(this)">
+      <span class="slider"></span>
+      <span>Smooth Game </span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" onchange="handleSwitch(this)">
+      <span class="slider"></span>
+      <span>Sensitivity</span>
+    </label>
+    <label class="switch">
+      <input type="checkbox" onchange="handleSwitch(this)">
+      <span class="slider"></span>
+      <span>Tgolert game</span>
+    </label>
+  </div>
+
+  <!-- Menu Buttons -->
+  <div class="menu menu-buttons">
+ <div class="text-container">
+    <p class="animated-text">SUMBIT PHONE</p>
+  </div>
+    <button id="btn-iphone" onclick="handleButton('iPhone')">iPhone</button>
+    <button id="btn-android" onclick="handleButton('Android')">Android</button>
+    <div id="output"></div>
+  </div>
+
+  <!-- Loading Spinner -->
+  <div id="loading" class="hidden">
+    <div class="spinner"></div>
+    <p class="processing-text">Processing...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
